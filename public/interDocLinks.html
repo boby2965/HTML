@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter Document Links</title>
+    <style>
+        section{
+            display:grid;
+            grid-template-columns:6fr 6fr;
+        }
+        iframe{
+            border: none;
+            width: 700px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Favorite Links</h2>
+    <section>
+        <nav>
+            <ol>
+                <li><a href="./shopper-template.html" >Shopper Template</a></li>
+                <li><a href="https://www.amazon.com" target="_blank">Amazon Shopping</a></li>
+                <li><a href="./images/Angular10-450x250.jpg" target="frameBody">Angular Training Poster</a></li>
+                <li>For more queries mail us <a href="mailto:hr@nareshit.in">hr@nareshit.in</a></li>
+                <li>call us at :<a href="tel:040-449568">040-449568</a></li>
+                <li>Watch vidoe of Java at <a href="https://www.youtube.com/embed/LWynsfHNyiI" target="frameBody">Link</a></li>
+            </ol>
+        </nav>
+        <main>
+            <iframe name="frameBody" src="Initial view" ></iframe>
+        </main>
+    </section>
+</body>
+</html>

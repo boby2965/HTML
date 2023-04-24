@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+    <form method="get">
+        <dl>
+            <dt>Test-1</dt>
+            <dd><input type="text" name="PatternTest" pattern="colou?r"></dd>
+            <dt>Test-2</dt>
+            <dd><input type="text" name="PatternTest" pattern="colou+r"></dd>
+            <dt>Test-3</dt>
+            <dd><input type="text" name="PatternTest" pattern="colou*r"></dd>
+            <dt>Test-4</dt>
+            <dd><input type="text" name="PatternTest" pattern=".at"></dd>
+            <dt>Test-5</dt>
+            <dd><input type="text" name="PatternTest" pattern="gmail\.com"></dd>
+            <dt>Test-6</dt>
+            <dd><input type="text" name="PatternTest" placeholder="Mobile (+91)" pattern="\(\+91\)"></dd>
+            <dt>Test-7</dt>
+            <dd><input type="text" name="PatternTest"  placeholder="Red or green or blue" pattern="red|green|blue"></dd>
+            <dt>Test-8</dt>
+            <dd><input type="text" name="PatternTest" pattern="colou?r\i"></dd>
+            <dt>Test-9</dt>
+            <dd><input type="text" name="PatternTest" placeholder="one or two digits" pattern="\d?\d"></dd>
+            <dt>Test-10</dt>
+            <dd><input type="text" name="PatternTest" placeholder="first non-number then number" pattern="\D\d"></dd>
+        </dl>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

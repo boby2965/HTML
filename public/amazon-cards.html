@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 500px;
+            display:grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-top: -250px;
+        }
+        .card{
+            padding: 5px;
+            box-shadow: 2px 2px 3px gray;
+            background-color: white;
+            height: 420px;
+            margin: 5px;
+        }
+        .card-header   {
+            font-size: 25px;
+            font-family: Arial;
+            font-weight: Bold;
+            margin-bottom:10px;
+
+        }
+        .row  {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .row img{
+            width: 100%;
+        }
+        .row div{
+            margin: 2px;
+        }
+        .card-body{
+            font-family: Arial;
+        }
+        .card-footer{
+            font-size: 15px;
+            color: blue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/main.jpg"  width="100%" alt="main">
+    </header>
+    <section>
+        <div class="card">
+            <div class="card-header">
+                Home appliacnes | 10% off on select cards
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div>
+                        <img src="images/a1.jpg" alt="">
+                        <p>Mixiee</p>
+                    </div>
+                    <div>
+                        <img src="images/aa2.jpg" alt="">
+                        <p>Bed sheets</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="images/a3.jpg" alt="">
+                        <p>Utensils</p>
+                    </div>
+                    <div>
+                        <img src="images/a4.jpg" alt="">
+                        <p>Picture Frames</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                See more...
+            </div>
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+    </section>
+</body>
+</html>
