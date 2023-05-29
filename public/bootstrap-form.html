@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            height:600px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <form class="border border-2 p-2 w-25 rounded border-primary">
+        <h3><span class="bi bi-person-fill">User Register</span></h3>
+    <div class="mb-3">
+        <label for="UserName" class="form-label">User Name</label>
+        <div>
+            <input type="text" class="form-control" name="UserName">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="Password" class="form-label">Password</label>
+        <div>
+            <input type="password" class="form-control" name="Password">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="City" class="form-label">Your City</label>
+        <div>
+            <select name="City" class="form-select">
+                <option>Delhi</option>
+                <option>Hyderabad</option>
+            </select>      
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="Age" class="form-label">Age</label>
+        <div>
+            <input type="range" name="Age" class="form-range">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="Subscribe" class="form-label">Subscribe</label>
+        <div class="form-switch">
+            <input type="checkbox" class="form-check-input" name="Subscribe" ><label class="form-check-label">Yes</label>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-primary w-100">Login</button>
+    </div>
+    </form>
+</body>
+</html>
