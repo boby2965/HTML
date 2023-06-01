@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        input:optional+span{
+            display: none;
+        }
+        input:required+span{
+            display:inline;
+            color: red;
+        }
+        input:required{
+            border: 1px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        input:optional{
+            border: 1px solid goldenrod;
+            box-shadow: 2px 2px 2px goldenrod;
+        }
+        .Age:in-range+div{
+            display:none;
+        }
+        .Age:out-of-range+div{
+            display:block;
+            color: red;
+        }
+        .Age:in-range{
+            border:1px solid green;
+            box-shadow: 2px 2px 2px green;
+        }
+        .Age:out-of-range{
+            border:1px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        .Password:valid+div{
+            display:none;
+        }
+        .Password:invalid+div{
+            display:block;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User NAme</dt>
+        <dd><input type="text" required><span>*</span></dd>
+        <dt>Age</dt>
+        <dd><input type="number" class="Age" min="15" max="30">
+        <div>Age 15 to 30</div<span>*</span></dd>
+        <dt>Password</dt>
+        <dd><input type="password" class="Password" pattern="(?=.*[A-Z])\w{4,10}">
+            <div>
+                Password should have 4 to 10 char with atleast one upper-case letter.
+            </div>
+        </dd>
+    </dl>
+</body>
+</html>
