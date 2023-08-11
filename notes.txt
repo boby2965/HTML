@@ -1,0 +1,3468 @@
+What are the various types of Software applications developed by companies?
+1. Desktop Applications
+2. Web Applications
+3. Distributed Applications
+4. AI Applications
+5. Mobile Applications
+6. IoT Applications
+                    
+                                    HTML, CSS, Bootstrap, JavaScript
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+            "Build Web Applications"
+                a) Front End   [HTML, CSS, Bootstrap, JS]
+                b) Back End   [Server Side Script, Frameworks, Database...]
+
+
+                                          HTML
+- Hyper Text Markup Language
+- Hyper means "Beyond".
+- Hyper text defines some content and take you beyond the content what is displayed.
+- Markup is used for marking up content so that it can be presented exactly as required.
+- Markup Language is a language used for presentations.
+
+FAQ: What is the role of HTML is Web Development?
+Ans : It is used for presentation.
+
+Evolution of HTML:
+- Network started in early 1960's with ARPANET by US-DOD.
+   [Advanced Research Projects Agency Network]
+- Networks
+    a) LAN
+    b) MAN
+    c) WAN
+- CERN Labs developed a language called GML for presentation in Network.
+   [Generic Markup Language]
+- CERN developed SGML  [Standard Generic Markup Language]
+- 1990's "Tim Berners Lee" introduced "Web" and "HTML".
+-  Web is a Protion of Internet.
+-  GML => SGML => HTML
+-  IETF [Internet Engineering Task Force] maintained HTML upto versions 3.1
+- WHATWG [Web Hyper Text Application Technology Work Group] from 2004, took responsibility of HTML and developed HTML 4, HTML 5.
+        https://whatwg.org/
+- Web is mantained and developed by  "W3C" [World Wide Web Consortium]
+        [Tim Berners Lee]
+- Latest version of Web is "Web-3".
+- Latest version of HTML is HTML5.
+
+    HTML                 - WHATWG.org                    Tim Berners Lee
+    JavaScript         - ECMA International, MDN         Brendan Eich
+    Web                 - W3C
+
+Terminology:
+1. Network
+2. Types of Networks
+3. Internet
+4. Web        
+5. Web Server : It resembles both hardware and software, It satisfies the client requests by sending and receving data.
+
+Web Server:
+----------
+- It resembles both hardware and software, it satisfies the client request by sending and receving data.
+- Web Applications are hosted on Web Server.
+- Web Server are 2 types
+        a) Local Servers
+        b) Cloud Servers
+- Local Servers
+        a) IIS    [ Internet Information Services Manager]
+        b) Tomcat
+        c) WAMP etc..
+
+- Cloud Servers
+        a) GIT HUB Pages
+        b) Firebase
+        c) AWS
+        d) Azure etc..
+
+                                            IIS [Web Server]
+                            [Internet Information Services Manager]
+
+1. Open Control Panel => Admnistrative Tools => IIS  [upto WIN 8]
+
+2. Open Programs => IIS 
+
+Note: IF you are unable to find IIS on your PC
+        GoTo => Programs and Features        [upto WIN 8]
+        GoTo => Add and Remove Programs 
+
+                                          Web Site
+
+- Website is a virtual directory on Web Server.
+        
+    Server Address    :   http://127.0.0.1     (or)   http://localhost
+
+- Website comprises 2 locations
+        a) Virtual
+        b) Physical
+- Physical path is used by developers to keep all the resources required for website.
+            
+            D:\ProjectName
+
+- Virtual path is used by clients to access the resources from website.
+
+            http://127.0.0.1/ProjectName          [Local]
+            http://www.projectname.com        [cloud]
+
+Creating a New Website on Local Server:
+1. Open IIS on your PC
+        "Internet Information Services Manager"
+
+2. Expand Local computer   [ http://localhost ]
+
+3. Expand "Sites" folder 
+
+4. Right Click on "Default Website"  and select "Add Virtual Directory"
+
+            alias [Website Name]        :  supermarket
+            Physical Path                :  D:\supermarket
+
+5. Go to Website Physical path and add folders    [D:\supermarket]
+
+            - images
+            - docs
+
+6.  Copy some images and documents into folders
+            images/pic.jpg
+            docs/file.pdf
+
+7. Open any browser : Chrome, Edge, FireFox, Safari 
+
+            http://127.0.0.1/supermarket/images/pic.jpg
+
+                                (or)
+            http://localhost/supermarket/docs/file.pdf
+
+                                     Web Page
+- Webpage provides an UI from where user can interact with the resources present in website.
+- Webpages are classified into 2 types
+        a) Static Page
+        b) Dynamic Page
+- Static Page comprises of same information to send as response across various requests.
+                        .html,  .htm
+
+- Dynamic Page sends response customized for client request. It changes according to request.
+                        .aspx, .asp, .jsp, .php                        
+
+- HTML is a language used for designing both static and dymamic pages.
+
+Setup Environment for Web Applications:
+---------------------------------------
+1. Download and Install "Node JS" software on your PC
+    [Package Manager - NPM, Yarn, RubyGems, Bower, NuGet..]
+
+   Note: We are installing "NodeJS" form a package manager called "NPM"
+
+                https://nodejs.org/en/   => download 18x version
+        
+           Check installed version from command prompt.
+
+           C:\> node  -v                 node js version
+           C:\> npm  -v                npm version
+
+2. Download and Install  "Visual Studio Code" editor
+    
+    Note: Editor provides an IDE [Integrated Development Environment] for building,
+           debugging, testing and deploying apps.
+
+            
+3. Install following extentions in Visual Studio Code
+
+                - Live Server    [Ritwick Dey]
+                - vscode-icons  [vscode icon]
+                - IntelliSense for CSS class names in HTML
+
+Create a new Project - Web Application [Static and Dynamic]
+
+1. Create a new folder in your PC for Web Application
+
+            E:\amazon-shopping        [ Physical Path ]
+
+2. Open project folder in "VS Code"
+
+3. Every Project must have  "package.json" , which comprises of project meta data.
+    - Open Terminal in VS Code   [ Ctrl + ` ]
+    - Switch to "Command Prompt"  from  "Power Shell"
+    - Run the following command
+
+                > npm   init   -y
+
+    - It will generate "package.json"
+
+4. Add following folders into project
+    
+        - public        [ comprises of static resources : html, images, documents]
+        - src            [ comprises of dynamic resources: css, sass, less, js, ts...]
+
+5. Every web application must have a startup page, which is "index.html"
+    - Add "index.html" file in root folder of project.
+    - Add some text
+                "Welcome to HTML
+    - Click "Go Live" button in VS Code status bar.
+                http://127.0.0.1:5500
+
+Setup Environment for Building Web Apps
+1. Node JS 
+2. VS Code
+3. Extentions    :  Live Server, Icons, IntelliSense
+
+Create a new Web Application
+- package.json        Meta Data
+    > npm  init  -y
+- public
+- src
+
+                        HTML for Designing Web Page
+                        ---------------------------
+- Markup language
+- Presentation
+- HTML is a language used for presentation.
+- HTML presents content in browser.
+- HTML presents content by using "DOM". 
+- DOM refers to Document Object Model.
+- It is managed by Browser Engine and Rendering Engines.
+        
+                                    Browser Architecture
+1. UI refers to the content display in browser workspace.
+2. Browser Engine is reponsible for translating HTML.
+3. Rendering Engine is responsible for presenting HTML content.
+4. The popular browser and rendering engines are
+
+                Chrome            :  V8
+                FireFox            :  SpiderMonkey, Gecko
+                Safari                :  Webkit
+                Edge                :  Chakra, Chromium
+
+5. Network is used to track the performance of webpage in browser.
+6. JavaScript Interpreter is responsible for translating client side script [JS].
+7. UI Backend comprises of API related information. 
+     [Application Programming Interface]
+8. Data Persistence, is storing data required for browser. 
+    [Local Storage, Session, Cookies..]
+
+
+                            HTML Parsing in Browser
+- Tokenization is the process of converting characters into "Tags"  <b>
+- DOM is a hierarchy for presenting elements.
+- Rendering is the process of generating output from Layout.
+- Painting is the process of presentign output.
+
+                                    HTML Elements
+- HTML elements are used for presenting content in browser.
+- Elements in HTML are classified into 5 groups
+
+        1. Normal Elements
+        2. Void Elements
+        3. RC data Elements
+        4. Raw Text Elements
+        5. Foreign Elements
+
+                                    Normal Elements
+- A normal element presents any content directly on callback.
+- It can present without using any additional attributes.
+- A normal element starts presentation but will never stop implicitly.
+- You have to stop explictly by using End token  
+            <b>        Start Token
+            </b>        End Token
+
+                                    Void Elements
+- The terms void in computer programming refers to discard the return.
+- These elements will not return any presentation directly on callback.
+- It can return only specified content and stops implicitly.  
+- It doesn't require  "End Token" 
+
+            <img>    
+            <img src="public/pic.jpg">
+
+                                    RC Data Type Elements
+                                    [Rich Content]
+- It allows only plain text content.
+- It will not allow any another element with in context.
+
+            <textarea>
+                Welcome to <b>HTML </b>
+            </textarea>
+
+                                    Raw Text Elements
+- These are elements presented without a token. 
+- These elements will not contain any tag.
+- Raw text is used for presentation.
+
+                    &#8377;
+                    &copy;
+                    &lt;
+                    &gt;
+
+                                    Foreign Elements
+- These elements are not native to HTML, but can  be used with HTML
+- They require additional plugin's [library].
+    
+                  Canvas, SVG, MathML
+
+ HTML Page Structure
+1. Every static page must have extention ".html" or "htm".
+                    
+FAQ: What is difference between ".html" & ".htm" ?
+Ans : There is no technical difference. Both are same.
+        It is recommended to defined ".html" 
+        The extention ".htm" is defined when exported for other softwares.
+
+2. Every HTML page must start with "Document Declaration", It is not required if your are designing page in HTML 4 version.
+
+            <!DOCTYPE html>        Version HTML5
+
+3. Every HTML document have 2 sections at high level.
+
+            a) Document Document Scope
+            b) Lexical Scope
+
+4. Document Scope is defined by using  
+            <html>
+
+            </html>
+
+5. Lexical scope is outside document section.
+
+     Note:  Content is lexical scope will load faster when compared to document scope.
+
+
+6. Every document scope must configure an attribute "lang"  [ language ]
+    Language is use to represent the content region type.
+
+                <html  lang="en-in | en-us">
+                </html>
+
+7. Every document scope comprises of 2 sections
+
+            a) Head        <head> </head>
+            b) Body        <body> </body>
+
+8. Head section comprises of content which is intended to load into browser memory.
+
+9. Body section comprises of content which is intended to load into browser workspace.
+
+10. The contents to keep in head section of HTML page are
+
+            a) title
+            b) link
+            c) meta
+            d) script
+            e) style
+
+                                            title
+   -  It defines the title to display in browser title bar.
+   -  It is also used in bookmarking page. [Favorites]
+
+        <html lang="en-in">
+        <head>
+            <title> Amazon | India </title>
+        </head>
+
+                                            link
+    - It is used to link any external document to page like "stylesheet" or "shortcut icon".
+    
+Ex: Linking Favorite Icon
+
+1. Add a new file into public folder by name  "favicon.ico"
+
+2. Right click and "Reveal in Explorer"
+
+3. Right click and open with "Ms-Paint"
+
+4. Set Image size  "Ctrl + E"   [Ms-Paint]   to  "32 x 32 pixels"
+
+5. Draw image and save
+
+6. Link to your HTML page
+
+    <head>
+        <link rel="shortcut icon"  href="public/favicon.ico">
+    </head>
+
+
+
+Ex:
+<!DOCTYPE html>
+<html  lang="en-in">
+    <head>
+        <title>Amazon | Shopping</title>
+        <link rel="shortcut icon" href="public/favicon.ico">
+    </head>
+</html>
+
+HTML Page Structure
+- .html, .htm
+- Document Declaration  <!DOCTYPE html>
+- Document Scope   <html> </html>
+- Language "lang"
+- Head and Body 
+    title, link, meta, script, style
+- Favicon
+    .ico   32x32
+
+                                           Meta
+- Meta refers to "Meta Data".
+- Meta is not for clients, it is for  browser and SEO. [Search Engine Optimization]
+- Meta is used to make the page responsive and SEO friendly.
+- Responsive makes your content fit to any device. [Mobile, Tap, laptop, watch etc..]
+- Meta provides responsive attributes for page
+
+    <meta  name="viewport"  content="width=device-width, initial-scale=1">
+
+            viewport        =  device screen 
+            content        =  your page content
+            initial-scale    =  zoom level  1=100%
+
+Note: To test responsive pages, download and install "Mobile Simulator Extention" for google chrome browser.
+                        chrome://apps  => webstore => mobile simulator => add
+
+
+         <meta   http-equiv="refresh"  content="5">        5 = 5sec
+
+- Meta provides attributes to make the page SEO friendly
+
+        <meta  charset="utf-8">            => which scripting language is used in page
+                                                    english, arabic, china, japan etc..
+         Unicode Transformation Format                                            
+                                                        8-bit        english
+                                                        16-bit
+                                                        32-bit        
+
+         <meta name="keywords"  content="some keywords used to find your page">
+
+        <meta name="description"  content="something about your site-summary">
+
+
+Summary:
+- viewport
+- http-equiv
+- charset
+- keywords
+- description
+
+Ex:
+
+<!DOCTYPE html>
+<html  lang="en-in">
+    <head>
+        <title>Amazon | Shopping</title>
+        <link rel="shortcut icon" href="public/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=2">
+        <meta http-equiv="refresh" content="4">
+        <meta charset="utf-8">
+        <meta name="keywords" content="Online Shopping, Best Offers, Cheap Mobiles, Offers on Elelectronics, min 50% off">
+        <meta name="description" content="Online Shopping Site with best offers..">
+    </head>
+    <body>
+        We understand that you may have questions about the Microsoft Services Agreement. We have an FAQ page (https://www.microsoft.com/en-us/servicesagreement/upcoming-faq.aspx) that provides more information, including what Microsoft products and services it covers. Whenever we make changes, we provide a summary of the most notable changes to the current Microsoft Services Agreement. We will also continue to provide a summary of the changes to the previous version, and a link to the previous version, of the Microsoft Services Agreement on the Summary of Changes (https://www.microsoft.com/en-us/servicesagreement/upcoming-updates.aspx) page.
+    </body>
+</html>
+
+- Styles are used to embed CSS into page.
+
+        <style  type="text/css">
+
+        </style>
+
+- Scripts are to embed JavaScript page.
+    
+        <script type="text/javascript"  src="">
+        </script>
+
+Summary - Head Section
+----------------------------------
+1. title
+2. link
+3. meta
+4. script
+5. style
+                                        Body Section
+- It defines the content to present in browser workspace.
+
+        <body>
+
+        </body>
+
+- Body token contains the following attributes
+
+        1. bgcolor                    : It sets a background color
+        2. text                        : It sets text color
+
+
+Note: HTML colors are defined in 3 different ways
+        1. color name                    : red, green, blue
+        2. shade name                    : lime, lemon, lightred, lightgray
+        3. hexadecimal code            :  # and 6 chars code
+                                               #  and 3 chars code
+
+                                               Color Combination
+                                               #RGB            Red, Green, Blue
+                                               #RRGGBB        Red, Green, Blue
+
+                                               Red,Green,Bule : 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+                                                                    dark                                bright
+Syntax:
+            <body  bgcolor="#f00">                red
+            <body  bgcolor="#0f0">                green
+            <body  bgcolor="#00f">                blue
+            <body  bgcolor="#00ff00">            green
+
+
+3. background        : It is used to set a background image for page.
+
+Note: Never use any physical path for resources in webpage. It is recommended to use
+        only virtual path.
+
+                <body  background="C:\images\name.jpg">        // not good
+
+        Copy images into project folder and access from project folder using virtual path.
+
+                  ./                It can access the files of current folder
+                  ../                It can access the files from folder one level back.
+                  ../../../            3 levels back
+
+         <body   background="./public/images/netflixbanner.jpg">
+
+4. align        : It align the body content left, center, right or justify.
+
+          <body   align="center">
+
+5. alink        :  It sets color for active link.
+
+6. vlink        :  It sets color for visited link.
+
+          <body   alink="red"    vlink="gray">
+
+              <a href="http://www.amazon.in"&gt; Amazon </a>
+
+          </body>
+
+7.  leftmargin                ]
+8.  rightmargin            ]     Margin defines space between border and browser.
+9.  topmargin                ]
+10. bottommargin        ]
+
+FAQ:
+1. What is the default size for webpage?
+A. 1200px width and 768px height
+
+2. What is difference between margin and padding?
+A. Margin sets space around border and padding sets space around content. 
+    Padding is space between content and border.
+
+3. What is the recommended space for content on page?
+A. 500px
+
+Syntax:
+    <body  leftmargin="350"  rightmargin="350" topmargin="50" bottommargin="50">
+
+    </body>
+
+                               Elements in Body Section
+
+- HTML 4 uses table for designing page layout.
+- Tables lead to a situation called "Kiss-of-Death".
+- HTML 5 introduced lot of semantics to design page more SEO friendly and user friendly. [200 semantics]
+- Semantic refers to specific purpose. WHATWG designed various elements for semantics.    [ MDN , WHATWG]
+- Body Semantics newly added into HTML for layout
+
+1. aside
+2. article
+3. dialog
+4. figure
+5. header
+6. section
+7. footer
+8. nav
+9. menu
+10. div
+11. span
+12. main
+13. figcaption
+
+Semantics used for Designing Layout:
+------------------------------------
+
+1. header :  It comprises of information to display at the top margin of page.
+               It usually contains navigation, brand name and quick links.
+    
+Note: Icons can be accessed and used from 3rd party libraries
+            a) Font Awesome
+            b) Bootstrap Icons
+
+Setup Icons for your project: [Bootstrap]
+        1. Open your project terminal
+
+        2. type the following command
+
+                    > npm   install   bootstrap-icons   --save
+                    > npm   i   bootstrap-icons --s
+
+        3. A new folder is created by name "node_modules"
+
+        4. Bootstrap icons are present in a CSS file
+
+                node_modules/bootstrap-icons/font/bootstrap-icons.css
+
+        5. If you want icons in any page then you have to link the CSS.
+
+        <head>
+            <link  rel="stylesheet"  href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        </head>
+
+        6. Icons are stored under the reference of  CSS class names
+
+                                class="bi  bi-house"
+                                class="bi  bi-facebook"
+                                class="bi  bi-globe"
+                    
+                            www.getbootstrap.com => icons
+
+        Syntax:
+                    <span  class="bi bi-house-door"> </span>
+                    <div  class="bi bi-house-door"> </div>
+
+                    
+                    https://themes.getbootstrap.com/product/shopper/
+
+    Styles Used for Header:
+
+        display:flex                    : It can keep content flexible in container [side-by-side]
+        justify-content                : space-between, space-around, space-evenly
+        font-size                        : text size in pixels
+        font-weight                    : bold
+        font-style                        : italics
+        font-family                        : Arial, Jokerman, Times New Roman
+        color                            : Text color
+        background-color            : Background Color
+        padding                        : space around content 
+        margin                        : It sets margin all directions
+        margin-left
+        margin-right
+        margin-top
+        margin-bottom
+        text-align                        : left, center, right , justify
+
+2. Article            : It is a container that comprises of latest offers and trends in your
+                      website.
+
+3. Nav                : It is used for defining navigation area in a page.
+
+4. Div                : It refers to a division, which is a container to keep content in block
+                      style. It represents a section of content.
+
+5. Span            : It refers to relative content in a section separated from each other.
+
+6. Footer            : It defines the content to display at the bottom margin of page.
+                      It usually contains quick links, copyright, contact details etc..
+
+7. Address        : It makes your contact details SEO friendly
+
+8. aside            : It is a semantic element that defines content, which is not relative to
+                      current page or which can navigate aside the current content to its
+                      partner contents.
+
+Note: Styles to change position of any element in page.
+
+            position : absolute        : It removes from normal flow but keeps content 
+                                          attached to paragraphs in page.
+
+            position : fixed            : It removes from normal flow but keeps content
+                                          attached to window. [scrolling is locked]
+
+            left, right, top, bottom    : They define the position of element along X and Y
+                                           axis.
+
+Syntax:
+ aside {
+      position: fixed;
+    right: 10px;
+     bottom: 0px;
+  }
+
+
+9. menu                : It is used to organize content in navigation. If "nav" comprises
+                          of various categories then you can define using "menu".
+
+10. Details            : It is used to create expandable and collapsable container.
+
+11. Summary            : It is used as a node for "details" element.
+
+Syntax:
+    <menu>
+        <details>
+            <summary> Node Name </summary>
+            <div></div>
+            <div></div>
+        </details>
+    </menu>
+
+Note: If you want any details to keep open then use the attribute "open".
+
+Syntax:
+        <details open>
+
+
+
+12. Main                : It is reffered as entry point of page. It specifies from where user
+                          can start in current website.
+
+Note: To keep any content center on page, you have to use the following effects
+        
+        body {
+                display:flex;
+                justify-content: center;            // horizontal center
+                align-items:center;                // vertical center
+                height: 400px;
+        }
+
+         Make sure that all content are kept in only one container "<main>"
+
+HTML Colors
+- Color Name
+- Color Shade Name
+- Hexa Decimal Code
+
+CSS Colors
+- rgb()                    rgb(red, green, blue)                    = 0 to 255
+                        rgb(255,0,0)                                = red
+
+- rgba()                rgba(red, green, blue, alpha)            = alpha from 0 to 1
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-size: cover;
+        }
+        .shade {
+            background-color: rgba(0,0,0,0.5);
+            width: 120%;
+            height: 768px;
+            margin : -20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            text-align: center;
+        }
+        .title {
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body background="./images/netflixbanner.jfif">
+   <div class="shade">
+        <main>
+            <div class="title">Unlimited Movies & TV Shows</div>
+            <div class="sub-title">Watch anywhere and anytime</div>
+        </main>
+   </div>
+</body>
+</html>
+
+                            HTML Body Semantics and Literals                                    
+- HTML can't present the content exactly as defined in editor.
+- You have to use various semantics and literals for presentation of body content.
+
+1. Line Breaks                    <br>
+
+FAQ: What is difference between <br> & <br /> ?
+Ans :  There is no <br /> in HTML. Browser knowns only <br>.
+        Developer can use <br /> to tell the editor that it is a void element. It is a self
+        ending element.
+
+Note: Don't use lot of line breaks manually in a page. Always try to use <div> and <span>.
+
+        Don't use <br> for space between lines. Always use CSS attributes.
+
+2. Blank Space                &nbsp;    [Non-Breakable space]
+
+        Note: HTML allows one char space between words and characters.
+               Additional spaces are trimmed. You can manually define space with
+               CSS attributes.
+                             letter-spacing
+                             word-spacing
+Syntax:
+    H &nbsp; &nbsp;T M L                Not Good - Bad coding
+
+Syntax:
+    <div class="title"> HTML </div>
+
+    .title {
+           letter-spacing: 20px ;
+     }
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+        .title {
+            letter-spacing: 20px;
+        }
+        .sub-title {
+            word-spacing: 20px;
+        }
+    </style>
+</head>
+<body>
+     <div class="title">HTML</div>
+     <div class="sub-title"> It is a markup language.</div>
+</body>
+</html>
+
+3. Preformatted Text            <pre>    It keeps the format of content and presents
+                                     exactly as defined in editor.
+
+4. Code Snippet                    <code>  It keeps you code content in page and make it
+                                     SEO friendly.
+
+Syntax:
+    <pre>
+        <code>
+              .... your code ...
+        </code>
+    </pre>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+       pre {
+         font-family: Arial;
+         margin-left: -30px;
+       }
+    </style>
+</head>
+<body>
+    <div>Sample C Program</div>
+    <div>
+      
+         <code>
+           <pre>
+            #include &lt;stdio.h&gt;
+            main()
+            {
+                printf("Welcome to HTML");
+            }
+           </pre>
+         </code>
+       
+    </div>
+</body>
+</html>
+
+5. sample text                    <samp>    Use for coding comments in code blocks.
+
+                                    <!--  comments  -->     HTML comments
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+       pre {
+         font-family: Arial;
+         margin-left: -30px;
+       }
+       samp { 
+         color:green;
+       }
+       code {
+          color:red;
+       }
+    </style>
+</head>
+<body>
+    <!-- Welcome to HTML -->
+    <div>Sample C Program</div>
+    <div>
+         <code>
+            <samp>Program to print Welcome.</samp>
+           <pre>
+            #include &lt;stdio.h&gt;
+            main()
+            {
+                printf("Welcome to HTML");
+            }
+           </pre>
+         </code>
+       
+    </div>
+</body>
+</html>
+
+6. variables                    <var>  It is used to configure variables in program.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+       var {
+         color:gray;
+       }
+    </style>
+</head>
+<body>
+     var <var>x</var> = 10; <br>
+     int <var>y</var> = 20; <br>
+     var <var>z</var> = <var>x</var> + <var>y</var>;
+</body>
+</html>
+
+1. Line Break        <br>
+2. Blank Space   &nbsp;
+3. Preformatted   <pre>
+4. Code            <code>
+5. Sample        <samp>
+6. Variable        <var>
+7. Address        <address>     It makes the content SEO friendly, so that crawlers can
+                                    track your website contact details.
+
+8. Dialog            <dialog>        It is used for creating pop-up windows in page.
+                                    It is in hidden state, you can display using "open"
+                                    attibute.
+Syntax:
+        <dialog open>
+            ....your content....
+        </dialog>
+
+9. Headings        <hn>            It is used for heading content where "n" refers to 
+                                    level number from 1 to 6.
+
+Syntax:
+        <h1> some text </h1>
+         ..........
+        <h6> some text </h6>
+
+FAQ's:
+1. We can define heading like style by using CSS and HTML to content, then why to use heading element?
+A. Heading elements are used in SEO to summarize your topics in page.
+
+2. Headings have a pre-defined style, can we remove those styles?
+A. Yes. By using CSS attributes :  initial, unset
+
+Syntax:
+        h1 {
+             all : unset;
+        }
+
+
+Ex: Headings
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+     <h1>Web Technologies</h1>
+     <h2>Front-End</h2>
+     <h3>HTML</h3>
+     It is a markup language. 
+     <h3>CSS</h3>
+     It defines styles.
+      <h3>JavaScript</h3>
+      It manipulates DOM.
+</body>
+</html>
+
+Note:
+    - Don't use too many headings in page, this will SPAM your page.
+    - Don't use headings for highlighting any word or sentence in page.
+
+
+
+
+10. Paragraphs & Blockquotes        <p> <blockquote>
+                                             Pargraph is used to configure a set of lines
+                                             which are related to specific topic.
+
+                                             Blockquote is similar to paragraph but it is used
+                                             in SEO for summary.
+Syntax:
+        <p> some text... </p>
+        <blockquote> some text... </blockquote>
+
+         <p align="left | center | right | justify">
+
+         <blockquote  align="left | center | right | justify">
+
+         <h1  align="left | center | right | justify">
+
+FAQ's:
+1. How to set space between lines in a paragraph?
+A. By using CSS attribute :   line-height
+
+    p {
+        line-height : 30px;
+    }
+
+2. How to set first line indent in paragraph?
+A.  By using CSS attribute :    text-indent
+
+    p {
+        text-indent : 100px;
+     }
+
+3. How to create a drop cap in paragraph?
+A.
+    - You can access first letter in paragraph by using  "::first-letter" css class
+    - You can define styles for first letter : font, size, color.
+    - You have to set "float" style for first letter.
+
+Syntax:
+    p :: first-letter {
+         font-size : 45px;
+         font-weight: bold;
+         color:red;
+         float: left;
+    }    
+
+11. Data List with Terms and Definitions            <dl>    for creating a data list
+                                                        <dt>    for a term in list.
+                                                        <dd>    for a definition under term.
+Syntax:
+        <dl>
+            <dt> Term </dt>
+            <dd> Definition </dd>
+        </dl>
+
+Fieldset and Legend
+- Fieldset is a container with frame.
+- Legent is a caption for container.
+- Fieldset is used for display various categories of content.
+
+Syntax:
+    <fieldset>
+           <legend> Title </legend>
+           ........
+           ........
+    </fieldset>
+
+- CSS Shadow 
+    a) box-shadow
+    b) text-shadow
+
+Syntax:
+    div {
+        box-shadow: hPixels  vPixes  blurPixels  color;
+      }
+
+    div {
+        box-shadow: 5px 4px 2px gray;
+     }
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+       dl {
+         display: grid;
+         grid-template-columns: 6fr 6fr;
+       }
+       dt {
+          background-color: black;
+          color:white;
+          margin-top: 5px;
+       }
+       fieldset {
+         margin-top: 10px;
+         box-shadow: 4px 4px 3px black;
+       }
+       legend {
+          border:1px solid black;
+          width: 150px;
+          text-align: center;
+          box-shadow: 2px 2px 3px red;
+       }
+    </style>
+</head>
+<body>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <dl>
+         <dt>Name</dt>
+         <dd>some name</dd>
+         <dt>Age</dt>
+         <dd>some number</dd>
+         <dt>Date of Birth</dt>
+         <dd>some date</dd>
+       </dl>
+    </fieldset>
+    <fieldset>
+      <legend>Address</legend>
+      <dl>
+         <dt>City</dt>
+         <dd>some name</dd>
+         <dt>State</dt>
+         <dd>some name</dd>
+         <dt>Postal Code</dt>
+         <dd>some code</dd>
+       </dl>
+    </fieldset>
+</body>
+</html>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+       legend {
+         text-align: center;
+         padding-left: 20px;
+         padding-right: 20px;
+       }
+       fieldset {
+         border-left: none;
+         border-right: none;
+         border-bottom: none;
+       }
+    </style>
+</head>
+<body>
+    <fieldset>
+       <legend> New to Amazon? </legend>
+    </fieldset>
+</body>
+</html>
+
+                            Ordered List and Unordered List
+
+- Ordered list is used for creating a numbered list.
+- <ol> for creating list.
+- <li>  for creating list item.
+
+Syntax:
+        <ol>
+           <li> Item-1 </li>
+           <li> Item-2 </li>
+        </ol>
+
+Attributes:
+        a) type            : numbering type        1, A, a, i, I
+
+                              <ol  type="a">
+
+        b) start            : specifies from where numbering have to start. It is refering
+                              to level number.
+
+                               <ol  type="1"  start="5">
+                                <ol  type="a"  start="5">
+
+        c) reversed        : It will display numbering in reverse order.
+    
+                                <ol  type="1"  reversed>
+                                <ol  type="a"  reversed>
+FAQ's
+1. Can we add normal text in <ol> instead of <li> ?
+A. Yes
+
+    <ol>
+        <h2>Title</h2>
+        <li> Item - 1 </li>
+        <li> Item - 2 </li>
+        <h2>Title </h2>
+        <li> Item - 3 </li>
+        <li> Item - 4 </li>
+    </ol>
+
+2. How to remove numbering for list ?
+A. By using css attribute
+
+        "list-style : none"
+
+    ol {
+       list-style :none;
+    }
+
+3. How to create a scrollable list?
+A. By using CSS Overflow attribute
+
+    ol {
+        border: 1px solid black;
+        width:100px;
+        height:100px;
+        overflow: auto;
+    }
+
+4. How to display list side by side or in multiple columns?
+A. By using CSS
+            display :flex;        side-by-side
+            display : grid;        columns
+            columns:2;        columns
+
+ Syntax:  Side-By-Side
+        ol {
+            display : flex;
+        }
+        li {
+           margin-right: 50px;
+        }
+
+Syntax: Columns  [numbering will be one below another]
+        ol {
+            columns : 2;
+         }
+
+Syntax: Grid  [numbering will be one beside another]
+
+        ol {
+            display:grid;
+            grid-template-columns: 6fr 6fr;    
+        }
+
+5. How to create a nested list?
+A. By configuring <ol> with in existing <li>.
+
+Syntax:
+        <ol>
+            <li> Item-1 </li>
+            <li> Item-2
+                 <ol>
+                   <li> Child-1 </li>
+                   <li> Child-2 </li>
+                </ol>
+            </li>
+        </ol>
+
+- Unordered List is similar to ordered list but have a bulleted list.
+- <ul>  Unordered List 
+- <li>   List Item
+
+Attribute
+- type            : It defines the symbol type  circle, disc, square.
+
+Syntax:
+    <ul type="disc | circle | square"> 
+    </ul>
+
+FAQ: How to set custom bullet symbol?
+Ans : By using CSS attribute  "list-style-image"
+
+Syntax:
+        ul {
+            list-style-image : url("images/bullet.gif");
+        }
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+        ul {
+            list-style-image: url("images/bullet.gif");
+            font-size: 34px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</body>
+</html>
+
+Ex: Nested List
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <ol>
+        <li>HTML
+            <ul type="square">
+                <li>Normal Elements
+                    <ol type="a">
+                        <li>Bold</li>
+                        <li>Italics</li>
+                    </ol>
+                </li>
+                <li>Void Elements</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
+                                 Text Formatting in HTML
+
+1. Font        : The <font> element  defines a face, size and color.
+
+Syntax:
+        <font  face="Arial"  size="1 to 7"  color="name|shade|code"> 
+            .... your text...
+        </font>
+
+Ex:
+    <font color="red" size="5" face="Freestyle Script">B</font>old
+
+FAQ: What are web-safe fonts?
+Ans:  These are the fonts used for transformation, if any special font is not available.
+        The web-safe fonts are:
+            a) sans-serif
+            b) serif
+            c) monospace
+
+Note: Don't use <font> element to change the char appearence in modern web, always try using CSS.
+
+2. Font  Styles
+
+    <b>            Bold                        Design
+    <strong>        Bold                        Review
+    <i>                Italics                        Design
+    <em>            Italics [Emphasized]        Review
+
+Syntax:
+            <b> your text </b>
+            <i>  your text </i>
+
+FAQ:  What is difference between <b> and <strong> ?
+Ans :  <b> is used while designing
+        <strong> is use while reviewing
+
+Note:  Strong is used only for development not for production [Go-Live].
+
+3. Font Effects
+
+        <u>            Underline            Design
+        <ins>            Inserted             Review
+        <strike>        Strikeout            Design
+        <del>            Deleted            Review
+        <sup>            Super Script        Raised from baseline
+        <sub>            Sub Script        Lowered from baseline
+
+Syntax:
+         <strike> &#8377;  43999/- </strike>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantics</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    The font style <b><i><u><strike>Bold</strike></u></i></b> is <ins><del>similar</del></ins> to <strong><em>Strong</em></strong>.
+    <br>
+    5<sup>th</sup> Anniversary Offer
+    <br>
+    H<sub>2</sub>O
+    <br>
+    <strike> &#8377;  43999/- </strike>
+</body>
+</html>
+
+
+Summary:
+1. font
+2. font style
+3. font effects
+
+                                    Images in HTML
+
+- Images are of various types and HTML will not support all image types.
+- HTML supports images of following types
+
+    APNG                Animated Portable Network Graphics            .apng
+    PNG                Portable Network Graphics                        .png
+    JPEG                Joint Photographic Expert Group                .jpg, .jpeg, .jfif
+    GIF                Graphic Interchange Format                    .gif
+    BMP                Bitmap                                            .bmp
+    TIFF                Tagged Image File Format                        .tiff
+    ICO                Microsoft Icon                                    .ico
+    SVG                Scalar Vector Graphics                            .svg
+    Webp                Web Picture Format                                .webp
+
+- Images are embedded into page by using <img> element.
+
+Attributes:
+1. src                        : Virtual Path of image
+2. width    & height        : size for image
+
+Web Supports
+        APNG, PNG, JPEG, GIF, TIFF, BMP, ICO, SVG, WebP
+
+    Image Type                            Purpose
+    -----------------------------------------------------------------------------------------------------
+    PNG, APNG                            HD Images
+                                            More Pixels
+                                            More space in memory
+                                            If you are providing images for download then
+                                            always try to use PNG, APNG.
+
+     JPEG                                    HD Images
+                                            Less Pixels when compared to PNG
+                                            Compressed Images
+                                            Less memory space
+                                            Good for on screen presentation.
+
+     GIF                                    Not a HD Format
+                                            Less Pixels and Colors [256 colors]
+                                            They are animated images.
+                                            Memory is not reduced
+                                            Good for logo, buttons, icons, bullets etc..
+
+     TIFF                                    Sliced Image Format
+                                            Used for Scanned Documents
+
+     BMP                                    Binary Image Format
+                                            Image in bytes
+                                            Good for storing image in database.
+                                            [Bitmap]
+
+     ICO                                    It is good for icons
+
+    
+     SVG                                    Scalar Vector Graphics
+                                            It is XML format Images
+                                            Extensible Markup Language
+                                            It is not pixel based.
+                                            It will keep the quality even after zoom.
+                                            
+     Webp                                    Web Picture Format
+                                            Embedded Image in page
+                                            You can't separate image from page.
+
+
+    FAQ's:
+        1. Which image is XML based?
+        A. SVG
+        
+        2. Which image is not Pixel Based?
+        A. SVG
+
+        3. Which image is used for diagrams?
+        A. SVG, Canvas
+
+        4. Which image is embedded with page?
+        A. Webp
+
+        5. Which Image is animated?
+        A.  APNG, GIF
+
+        6. Which image is in binary format?
+        A.  BMP
+
+        7. Which image is compressed format?
+        A. JPEG
+
+
+                                HTML Image Element
+        - If you want image SEO friendly then keep image with caption by using
+                <figure>
+                <figcaption>
+                <img>
+        - If you want image to embed into page without SEO then
+                <img>
+
+Syntax: SEO friendly
+
+        <figure>
+            <img>
+            <figcaption> caption </figcaption>
+        </figure>
+
+Ex:
+          <figure>
+                <img src="images/realme.jpg" width="150">
+                <figcaption>Realme C35</figcaption>
+            </figure>
+
+                                    Image Attributes
+
+    1. src                    : It specifies the name and path of image.
+    2. alt                    : It defines the alternative text to display when image fails to                                       load.
+
+    Syntax:
+        <img src="images/realme.jpg"  alt="realme c35 - preview N/A">
+
+    3. title                    : It specifies the title to display when mouse is over image.
+                               [screen tips - tooltips]
+
+    Syntax:
+        <img src="images/realme.jpg"  title="20% OFF on realme mobiles">
+
+    
+    4. width & height        : It defines width and height for image in pixels or percentage.
+                              Image size in % will be fluid image size.
+
+    Syntax:
+        <img src="images/realme.jpg"  width="50%" height="300px">
+
+    5.  border                : It sets border for image by specified pixels.
+
+
+    Syntax:
+        <img src="images/realme.jpg  width="200" height="300" border="2">
+
+    6. align                : It can align image only left or right.
+                              Align can wrap image with regard to text.
+
+    Syntax:
+        <img src="images/realme.jpg  align="left">
+
+    7. hspace & vspace    :  Horizontal and vertical padding for image.
+
+    Syntax:
+        <img src="images/realme.jpg  align="right" hspace="20" vspace="10">
+
+Ex: Designing Cards with Images with CSS Flex and Flex Wrap
+        
+                .container {
+                     display:flex;
+                     flex-wrap: wrap;
+                 }
+
+Links in HTML
+                                        [Hyperlinks]
+
+- A link is clickable text, picture or graphic that navigates the user to any specified location within the page or outside the page.
+
+- Hyperlink [hyper=beyond] navigates the user beyond the content.
+
+- A hyperlink is classified into 2 types
+
+
+        1. Intra document link
+        2. Inter document link
+
+Intra Document Link
+- It enables navigation from one location to another within the same page.
+- A hyper link is defined by using HTML anchor element "<a>"
+- To create intra document links
+        a) You have to define an "ID" for the target element
+                <h2  id="ui">
+                <img  id="realme">
+                
+        b) You can navigate to ID by using "href" attribute of <a> anchor element.
+
+                <a href="#ui"> UI </a>
+                <a href="#realme"> Realme </a>
+
+Syntax:    
+            http://127.0.0.1:5500/public/page.html#realme
+
+FAQ's
+1. What is difference between "src" and "href" ?
+A. 
+    <img src="path">
+    <a  href="path">
+
+    src        : It is a getter - It is accessor in computer programming which is used to get
+              a value. [read a value]
+    
+    href    : It is a setter - It is accessor used to set a value.
+    
+2. Why href is required for <a> ?
+A. <a> navigates to any location by setting a reference in URL. Hence it needs a setter called "href".
+
+3. How to change color for visited link?
+A. <body  vlink="green">
+
+4. How to change color for active link ?
+A.  <body  alink="red">
+
+5. How to remove underline for hyperlink?
+A. by using "text-decoration" style set to "none"
+
+    a {
+        text-decoration:none;
+    }
+
+a) Intra Document Links
+        a) Set ID for reference element
+                <h2 id="topic">
+        b) Go to reference id by using <a href="#topic">
+
+FAQ: How to highlight any intra document link target if there is no enough space for scrolling page?
+Ans : By using CSS class ":target"
+
+Syntax:
+         .card {
+
+         }
+        .card:target {
+
+        }
+
+Note: Every transformation for element is applied with in a fraction of time interval.
+        You can control the timing for transformation by using CSS attribute "transition".
+
+        .card:target {
+              font-size : 30px;        
+              height : 300px;
+              transition: 2s;
+         }
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intra links</title>
+    <style>
+        .card {
+            width: 250px;
+            border:1px solid black;
+            box-shadow: 2px 2px 2px gray;
+            padding: 5px;
+            margin: 20px;
+            height: 200px;
+        }
+        .card:target {
+            background-color: black;
+            color:white;
+            font-size: 30px;
+            height: 300px;
+            transition: 1s;
+        }
+        .container {
+            display: flex;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        li {
+            margin-right: 100px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#js">JavaScript</a></li>
+    </ul>
+    <div class="container">
+        <div class="card" id="html">
+            <h2>HTML</h2>
+            <p>It is a markup language.</p>
+        </div>
+        <div class="card" id="css">
+            <h2>CSS</h2>
+            <p>It defines styles for HTML.</p>
+        </div>
+        <div class="card" id="js">
+            <h2>JavaScript</h2>
+            <p>It is a language to manipulate DOM.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+                                Inter Document Links
+- It refers to a hyperlink that can navigate the user to any file, url or application.
+- It uses navigation from one page to another.
+- Navigate to File
+        <a href="images/aws.jpg"> Poster </a>
+        <a href="docs/html.pdf"> Tutorial </a>
+        <a href="template.html"> Template </a>
+  
+   Note: Every linked document can't open in browser.
+          It suitable plugin's are not available then document will download, it can't open.
+
+  FAQ: How to download any file from a link? 
+  Ans : By using <a> attribute  "download".
+
+
+         <a href="images/aws.jpg"  download="fileName|optional">  
+
+- Navigate to any application
+
+            Email                href="name@gmail.com"
+            Skype                href="skype:name@outlook.com"
+            Phone                href="tel:9888211223"
+
+        <a href="hr@nareshit.in"> hr@nareshit.in </a>
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter Document Links</title>
+</head>
+<body>
+    <h2>Favorite Links</h2>
+    <ol>
+        <li><a href="./shopper-template.html">Shopper Template</a></li>
+        <li><a href="http://www.amazon.in">Amazon Shopping</a></li>
+        <li><a href="./images/aws.jpg" download="Amazon">AWS Training Poster</a></li>
+        <li><a href="./docs/html.pdf">HTML Tutorial</a></li>
+        <li><a href="./docs/VirtualDOM.pptx">Browser DOM PPT</a></li>
+        <li>For more queries mail us <a href="hr@nareshit.in">hr@nareshit.in</a></li>
+        <li>Skype Us : <a href="skype:hr_nareshit@outlook.com">hr@nareshit</a> </li>
+        <li>Call Us : <a href="tel:040-4495968">040-4495968</a></li>
+    </ol>
+</body>
+</html>
+
+    FAQ: How to open linked document in a new tab?
+    Ans : By using "target=_blank"  attribute for <a>
+
+          <a href="template.html"  target="_blank">  Template </a>
+
+    FAQ: How to open linked document in new window?
+    Ans:  By using JavaScript:window.open()  method.
+
+           <a href="javascript:window.open('filePath', 'Title', 'features')">  File </a>
+
+Ex:
+<a href="javascript:window.open('./images/aws.jpg','AWS','width=400 height=300')">AWS Training Poster</a>
+
+    FAQ: How to open linked document in same window along with existing content?
+    Ans :  By using <iframe> in HTML 5
+
+Syntax:
+            <a href="images/aws.jpg"  target="frameBody">  Poster </a>
+
+             <iframe  name="frameBody" width="100%" height="300"> </iframe>
+
+Ex: Change YouTube view link to embed link
+
+        https://www.youtube.com/watch?v=LWynsfHNyiI        => view Link
+
+        https://www.youtube.com/embed/LWynsfHNyiI            =>  embed Link
+
+Forms in HTML
+- Form provides an UI from where user can interact with our application.
+- It is primary component for handling "CRUD" operations.
+
+                    C        - Create
+                    R        - Read
+                    U        - Update
+                    D        - Delete
+
+- Form is a collection of elements like buttons, textbox, checkbox, radio, list box, dropdown etc..
+
+                                The <form> Element
+
+- It is container that comprises of various elements.
+- Form allows to handle CRUD operations using elements.
+- Form provides various attributes
+
+Syntax:
+            <form>
+                ....elements....
+            </form>
+ 
+    Attribute                Description
+    -----------------------------------------------------------------------
+     id                        It defines a unique reference ID for form
+                            [ JavaScript & CSS can use id to access form]
+
+    name                    It is used as a reference name for form.
+                            [ name can be common for various elements ]
+
+    class                    It is used as a reference for CSS and JavaScript.
+
+    
+    method                It defines the actions performed by form element.
+                            HTML form element can handle 2 methods
+                                a) GET
+                                b) POST
+
+Note:
+     1. GET method is used by form to "Fetch" data from server.    
+     2. POST method is used by form to "Submit" data to server.
+     3. If method is not defined , then the default method is GET.
+
+FAQ: Can we submit data to server on GET method?
+Ans:  Yes. But not recommended every time.
+
+FAQ: Why it is not recommended to submit data on GET?
+Ans : 
+       - Data on GET request is submitted to server
+       - Data is appended into URL as query string.
+       - Everyone can view your data.
+       - It is not safe.
+       - It is easy to hack your data.
+       - It is stored in browser logs [history].
+       - It can be bookmarked.
+       - You can't submit complex data [binary].
+       - There is limit for data [ max 2048 chars ].
+       - The data submitted on GET can be cached by browser.
+       - Caching data into memory saves round trips.
+
+FAQ: What are the features of submitting data on POST?
+Ans:
+       - Data is submitted to server on POST
+       - Data is kept in Form Body
+       - It is not visible to users.
+       - It is safe.
+       - It is hard to hack your data.
+       - It is not stored in browser logs.
+       - It can't be bookmared.
+       - There is no limit for submitting data.
+       - You can submit complex data [binary].
+       - Data can't be cached on POST.
+        
+
+    action                        It defines the target page, where the form data is submitted.
+                                [jsp, php, asp, aspx etc..]
+
+        
+                                <form  method="post"   action="page.asp|jsp">
+
+    novalidate                It is used to by-pass the default HTML validations.
+
+                                <form  method="get"  novalidate>
+                                    
+                                    Email : <input type="email"> <button>Submit</button>
+
+                                </form>
+
+Form Events:
+
+            onsubmit             It defines the actions to perform when form is submitted.
+            onreset             It defines the actions to perform when form resets data.
+
+                                    Form Elements
+
+1. TextBox        : It is used for string input.
+
+                      <input type="text">         type refers to data type allowed into input.
+
+        Attribute                   Description
+        ------------                ----------------------------------------
+        id                          It is a unique reference for element
+        name                        It is also reference which can be common for several elements
+        class                       It is used for CSS and JavaScript
+
+        Note: It is mandatory that every form element must have a "name".
+                If name is not defined then form can't submit elements data.
+
+        value                       It specifies the default value to display in textbox.
+
+        placeholder                 It defines the water mark text to display when value is not defined.
+
+                                <input type="text" name="UserName"  value="John" 
+                                        
+                                    placeholder="User Name required">
+- TextBox Element
+        id, name, class, value, placeholder
+
+    Attribute                    Description
+    -----------------------------------------------------------------------
+    readonly                    It will not allow to modify the value of textbox but can submit
+                                its value.
+            
+    disabled                    It will not allow to modify and submit.                    
+
+                                <input type="text"  value="John" disabled>
+    
+    autofocus                    It sets focus to the textbox automatically on page load.
+                                [FIFO]
+
+                                <input type="text"  autofocus>
+
+    size                        It defines the width for textbox. The default is 20.
+        
+                                <input type="text" size="4">
+
+    minlength                    It validates the lower bound value of textbox.
+
+    maxlength                It restricts the maximum number of chars.    
+                                
+                                <input type="text" minlength="4" maxlength="10">
+
+    required                    It ensures that the textbox is not empty. 
+                                It is used for mandatory fields.
+
+                                <input type="text"  required>
+    
+    list                            It is used to attach a data list to textbox.
+                                <datalist> element is used to configure a list with
+                                <option> as value.
+
+                                Datalist is used as "auto complete" text for input value.
+
+    
+                                <input type="text"  list="terms">
+                                <datalist  id="terms">
+                                <option> Term-1 </option>
+                                <option> Term-2 </option>
+                                </datalist>
+
+     pattern                    It is used to verify the format of input value by matching it
+                                against a "Regular Expression".
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form method="get">
+        <div align="center">
+            <h1>Google</h1>
+            <input type="text" size="40" name="string" list="terms">
+            <datalist id="terms">
+                <option>JavaScript Tutorial</option>
+                <option>HTML Tutorial</option>
+                <option>JavaScript Projects</option>
+                <option>CSS Projects</option>
+                <option>HTML Examples</option>
+            </datalist>
+            <p>
+                <button>Search</button>
+            </p>
+        </div>
+     </form>
+</body>           
+</html>
+
+                                     Regular Expression
+ - A regular expression is built by using "Meta characters" and "Quantifiers".
+ - A regular expression is used for validating the format of input value.
+
+    Meta Character            Description
+    ------------------------------------------------------------------------------------------
+    ?                            Zero or one occurance of a character.
+
+                                pattern="colou?r"        => color, colour
+
+    +                            One or more occurances of a character.
+
+                                 pattern="colou+r"        => colour, colouur, colouuur
+
+    *                            Zero or more occurances of character.
+
+                                pattern="colou*r"        => color, colour, colouur
+
+    .                            Any single character
+
+                                pattern=".at"                => cat, bat, rat, 1at, $at
+                                pattern=".o."                => cow, toy, dos, 1o4, $o1
+
+    \                            It transforms a character into meta character and vice versa.
+
+                                pattern="gmail\.com"        => gmail.com
+                                
+                                pattern="\(\+91\)"            => (+91)
+    
+    |                            Pipe refers to "OR", you can configure multiple chars or
+                                words sequence.
+
+                                pattern="red|green|blue"    => red, green, blue
+
+    \i                            Ignore case for given string.
+    
+                                pattern="colou?r\i"        => color, Color, COLOR
+                                                            => Colour, COLOUR etc..
+
+    \d                            It refers to single digit numeric value.
+
+                                pattern="\d?\d"            => 1, 3, 6, 44, 22
+                                pattern="\d\d"            => 33, 24, 56, 21
+
+    \D                            It refers to non-numeric chars. All chars other than number.
+
+                                pattern="\D"                => A-Z, a-z, special chars
+                                pattern="\D\d"            => #3, A2
+    \w                    It refers to word chars, which include  " A-Z, a-z, 0-9, _ "
+
+    \W                    It refers to non-word chars - all special chars except _ .
+                        It will not allow "A-Za-z0-9_".
+
+    \s                    It refers to blank space.
+
+                        pattern="\d\s\D"            => 8 A
+                        pattern="\d\s?\D"        => 8A, 8 A
+
+    [ ]                    It defines specific and range of elements.
+
+    [a, d, s]            Only specified chars allowed.
+
+    [A-Z]                Only uppercase letters allowed.
+
+    [a-z]                Only lower case letters allowed
+
+    [a-zA-Z]            Both upper and lower case allowed.
+
+    [a-Z]                Both upper and lower case allowed.
+
+    [0-9]                Only numeric allowed.
+
+    [a-zA-Z0-9]        Alpha numeric allowed.
+
+    [a-mA-M4-9]        Only chars in specified range are allowed.
+
+    [^a,d,s]            Excluding specified chars all others allowed.
+
+    [^a-m]                Excluding the chars in specified range, all others allowed.
+
+    ( )                    It defines union of chars. It is used for building expressions.
+
+    (?=.*[A-Z])        It refers to atleast one uppercase letter.
+
+    (?=.*[0-9])            It refers atleast one numeric.
+
+    (?=.*[!@#$%^&])  Atleast one special char.
+
+    [!@#$%&]        Only specified special chars allowed
+
+Quantifiers:
+------------
+
+    {4}                    Exactly 4 chars only allowed.
+
+    {4, 10}                Between 4 to 10 chars only.
+
+    {4, }                Minimum 4 and maximum any.
+
+Ex:
+1. Write a pattern to validate user name 4 to 10 chars uppercase only.
+
+    <input type="text"  pattern="[A-Z]{4,10}">
+
+2. Write a pattern to validate user id 4 to 15 chars alpha numeric with "_".
+
+    <input type="text"  pattern="\w{4,15}">
+
+3. Write a pattern to validate mobile number starting with +91 and  have 10 digits.
+
+    <input type="text"  pattern="\+91\d{10}">
+
+4. Write a pattern to validate bank IFSC code. [SBI]
+
+    <input type="text"  pattern="SBIN0\d{6}">
+
+5. Write a pattern to validate both SBI and HDFC Ifsc codes in one textbox.
+
+                    SBIN0012456
+                    HDFC0002245
+    
+    <input type="text"  pattern="[SBIN0\d{6}] | [HDFC000\d{4}]">
+
+
+6. Write a pattern to validate UserId  4 to 10 chars alpha numeric with atleast one uppercase letter.
+
+    <input type="text"  pattern="(?=.*[A-Z])\w{4,10}">
+
+7. Write a pattern to validate userid with atleast one uppercase, and numeric with alpha numeric 4 to 10 chars.
+
+     <input type="text"  pattern="(?=.*[A-Z])(?=.*[0-9])\w{4,10}">
+
+
+8. Write a pattern to validate user id with at least 1 uppercase, 1 numeric and 1 special char with  4 to 10 chars.
+
+     <input type="text"  pattern="(?=.*[A-Z])(?=.*[0-9])(?=.*\W)[A-Za-z0-9\W]{4,10}">
+
+9. Write a pattern to validate following phone number format
+
+                +(1)(425) 555-0100
+
+    <input type="text"   pattern="\+\(1\)\(\d{3}\)\s\d{3}-\d{4}">
+
+
+                +(44)(20) 1234 5678
+
+    <input type="text"  pattern="\+\(44\)\(\d{2}\)\s\d{4}\s\d{4}">
+
+Form Elements:
+--------------
+1. TextBox
+2. Password Input    : It can mask the chars with "*", all other attributes are similar to
+                          text box. Except that you can't use "list" for password.
+
+ Syntax:
+ <input type="password"  required  minlength="4" maxlength="10" pattern="[A-Z]{4,10}">
+
+3. Number Input        : It allows to input only numeric value.
+                          Attributes: min, max, step
+
+Syntax:
+  <input type="number"  min="15"  max="30"  value="22">
+  <input type="number"  min="1"  max="100"  value="1" step="5">
+  <input type="number"  min="10.45" max="18.45"  value="10.45"  step="0.01">
+
+4. Range Input        : It is similar to number but have a slider for selecting values.
+
+Syntax:
+   <input type="range"  min="10.45" max="18.45"  value="10.45"  step="0.01">
+
+
+5. Email Input        : It is used to validate email address.
+
+Syntax:
+    <input type="email"  required  autofocus name="Email">
+
+
+6. Url Input            : It is used to validate  "URL" format.
+
+                           http://www.domain.com
+
+Syntax:
+    <input type="url"  name="address">
+
+
+7. Date and Time Input    :     It allows and validates only date & time values.
+                                There are various date and time types.
+                                 - date
+                                 - datetime-local
+                                 - time
+                                 - week
+                                 - month
+                                 - year
+                                Date format for configuration must be "YYYY-MM-DD"
+                                You can restrict date using "min and max" attributes.
+Syntax:
+<input type="date"  name="departure"  min="2023-03-29"  max="2023-04-15">
+<input type="month">
+<input type="time">
+<input type="week">
+<input type="datetime-local">
+
+8. Color Input        : It allows user to select a color from color picker.
+                          The color value must be only 6 char hexadecimal with "#".
+
+Syntax:
+ <input type="color"  value="#ff0000">
+
+9. File Input            : It can display a file browser. You can select a file from your device
+                          using file input.
+
+FAQ: Can we restrict file type?
+Ans: No. You can set filter, which can changed. 
+       Filter is defined by using "accept" attribute.
+
+Syntax:
+    <input type="file"  accept=".jpg">
+    <input type="file"  accept=".jpg, .png">
+
+FAQ: How to enable selection of multiple files?
+Ans : By using "multiple" attribute.
+
+Syntax:
+    <input type="file"  accept=".jpg"  multiple>
+
+10. Radio Buttons        : Radio buttons are used to exhibit "Mutex".
+                              [Mutual Exclusion].
+
+                              Radio allows to select one or multiple.
+
+                              Radio will not allow to de-select the selection.
+
+                              Hence you have to use radios with Mutex.
+
+                              Mutex can be defined by specifying same name for all radios
+                              in  a category.
+Syntax:
+    <input type="radio" name="gender">  Male
+    <input type="radio" name="gender">  Female
+
+                             You can make any radio selected by default by using "checked"
+Syntax:
+    <input type="radio" name="gender" checked> Male
+
+                              Radios submit  "ON" as value, hence you have  to define
+                              a value for every radio.
+
+Syntax:
+    <input type="radio" name="gender"  value="Male"> Male
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form method="get">
+          <dl>
+            <dt>Gender</dt>
+            <dd>
+               <input type="radio" name="gender" value="Male" checked> Male
+               <input type="radio" name="gender" value="Female"> Female
+            </dd>
+            <dt>Payment</dt>
+            <dd>
+               <input type="radio" name="pay"> Cash 
+               <input type="radio" name="pay"> Credit Card 
+               <input type="radio" name="pay"> UPI
+            </dd>
+          </dl>
+          <button>Submit</button>
+     </form>
+</body>           
+</html>
+
+11. CheckBox Input            : It is similar to radio but allows to check and uncheck any
+                                  option.
+                                  You can select one or multiple.
+Syntax:
+    <input type="checkbox"  name="course"  value="HTML" checked> HTML 
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form method="get">
+          <dl>
+             <dt>Select Course</dt>
+             <dd>
+               <input type="checkbox" checked name="course" value="HTML"> HTML 
+               <input type="checkbox" name="course" value="CSS"> CSS
+               <input type="checkbox" checked name="course" value="JavaScript"> JavaScript
+             </dd>
+          </dl>
+          <button>Submit</button>
+     </form>
+</body>           
+</html>
+
+Ex: Bootstrap Checkbox
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css&quot; rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+</head>
+<body class="container">
+     <form method="get">
+          <dl>
+             <dt>Select Course</dt>
+             <dd class="form-switch">
+               <input type="checkbox" class="form-check-input" checked name="course" value="HTML"> HTML  <br>
+               <input type="checkbox" class="form-check-input" name="course" value="CSS"> CSS <br>
+               <input type="checkbox" class="form-check-input" checked name="course" value="JavaScript"> JavaScript
+             </dd>
+          </dl>
+          <button>Submit</button>
+     </form>
+</body>           
+</html>
+
+HTML Button Elements
+- Buttons are used to confirm user actions.
+- User confirmation may be 
+        Record Actions:    Insert, Update, Delete, Register, Submit, Cancel, Reset etc..
+        Navigation Actions: Next, Previous, First, Last etc..
+        Miscelaneous Actions: Save, Open, Print, Copy, Ok etc..
+- Button are classified into 2 types
+        a) Generic Buttons
+        b) Non Generic Buttons
+- Generic Buttons have pre-defined functionality
+
+        a) HTML 4 Generic Buttons
+                <input type="submit">
+                <input type="reset">
+
+        b) HTML 5 Generic Button
+                <button type="submit"> Text | Picture | Graphic </button>
+                <button type="reset">  Text | Picture | Graphic </button>
+
+
+  Note: Submit type can submit form data to server.
+         Reset type can reset the form data to default.
+
+- Non Generic Buttons are ordinary buttons without any functionality defined by default.
+
+        a) HTML 4
+            <input type="button"  value="Print">
+        
+        b) HTML 5
+            <button type="button"> Text | Image| Graphic </button>
+
+Note: If button type is not default for HTML 5 buttons, the default type is submit.
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>User Name</dt>
+            <dd><input type="text" name="UserName"> <button type="button">Submit</button> </dd>
+            <dt>HTML 4 Buttons</dt>
+            <dd>
+                <input type="submit" value="Register">
+                <input type="reset" value="Cancel">
+            </dd>
+            <dt>HTML 5 Buttons</dt>
+            <dd>
+                <button type="submit"> <span class="bi bi-person-fill"></span> Register</button>
+                <button type="reset">
+                    <img src="../public/images/a1.jpg" width="20" height="30">
+                </button>
+            </dd>
+        </dl>
+    </form>
+</body>
+</html>
+
+
+
+Summary
+- Form <form>
+- TextBox   <input>
+- Number Input
+- Range
+- Email
+- URL
+- Color
+- File
+- Date and Time
+- Radio 
+- Checkbox
+- Dropdown
+- Listbox
+- Meter
+- Progress
+- Textarea
+- Label
+- Buttons
+- Password
+
+                        Bootstrap Classes for Form Elements
+
+1. Install Bootstrap for your project
+
+        > npm   install  bootstrap  --save
+
+2. Bootstrap CSS is copied into "node_modules"
+
+3. Link the bootstrap.css to your page
+
+    <link  rel="stylesheet"  href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+4. Bootstrap CSS have few default styles to apply for your page. You can add more styles by using css class names.
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <h1>Bootstrap Form Elements</h1>
+    <dl>
+        <dt>Name</dt>
+        <dd>Samsung LED TV</dd>
+        <dt>Price</dt>
+        <dd>60000.33</dd>
+    </dl>
+</body>
+</html>
+
+
+
+Bootstrap Container Classes
+    .container
+    .container-sm
+    .container-lg
+    .container-xl
+    .container-md
+    .container-fluid
+
+Bootstrap Margins    
+    .m                Margin all directions
+    .mt                margin top
+    .mb            margin bottom
+    .me            margin right [end]
+    .ms            margin left [start]
+
+    Syntax:
+            .m-{size}            size 1 to 4 points
+            .mt-{size}
+
+   <div class="mt-4 ms-4">
+        <span class="bi bi-person me-4"></span>
+        <span class="bi bi-heart me-4"></span>
+        <span class="bi bi-search"></span>
+    </div>
+
+Bootstrap Padding
+    .p
+    .ps
+    .pe
+    .pt
+    .pb
+
+Syntax:
+        .p-{size}            1 to 4
+
+Bootstrap Border
+    .border
+    .border-{size}            1 to 3
+    .border-{contextual}     Primary, Success, Danger, Warning, Dark, Info, Light etc..
+    .rounded
+    .rounded-{size}        1 to 3
+    .rounded-circle
+    .rounded-pill
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <div class="rounded rounded-pill mt-4 ms-4 border border-3 border-danger pt-3 pb-2 ps-2">
+        <span class="bi bi-person me-4"></span>
+        <span class="bi bi-heart me-4"></span>
+        <span class="bi bi-search"></span>
+    </div>
+    <div class="mt-3 ms-3">
+        <img class="rounded rounded-circle border border-3 border-dark" src="images/aws.jpg" width="100" height="100">
+    </div>
+</body>
+</html>
+
+Button Classes
+
+.btn
+.btn-{contextual}     primary, secondary, danger, warning, success, info, dark etc..
+.btn-outline-{contextual}
+.btn-close
+.btn-link
+.btn-group
+.btn-group-vertical
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <h2>Bootstrap Buttons</h2>
+    <dl>
+        <dt>Button Group</dt>
+        <dd class="btn-group-vertical">
+            <button class="btn btn-primary mb-2">Insert</button>
+            <button class="btn btn-success mb-2">Update</button>
+            <button class="btn btn-danger">Delete</button>
+        </dd>
+        <dt>Ordinary Button</dt>
+        <dd>
+            <button>Submit</button>
+        </dd>
+        <dt>Contextual</dt>
+        <dd>
+            <button class="btn btn-primary">Insert</button>
+            <button class="btn btn-success">Update</button>
+            <button class="btn btn-danger">Delete</button>
+        </dd>
+        <dt>Contextual Outline</dt>
+        <dd>
+            <button class="btn btn-outline-primary">Insert</button>
+            <button class="btn btn-outline-success">Update</button>
+            <button class="btn btn-outline-danger">Delete</button>
+        </dd>
+        <dt>Special Button</dt>
+        <dd>
+            <button class="btn-close"></button>
+            <button class="btn btn-link">Signout</button>
+        </dd>
+    </dl>
+</body>
+</html>
+
+Bootstrap Form Element Classes
+
+.form-control            text, number, password, date, url, email, textarea etc..
+.form-range            range
+.form-control-color    color
+.form-select            dropdown, listbox
+.form-check-input    radio, checkbox
+.form-label            label
+.form-check-label    label for radio and check box
+.form-control-file        file
+.form-switch            radio and checkbox group [switch style]
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <form class="border border-2 w-25 p-2 rounded border-primary">
+        <h3><span class="bi bi-person-fill">User Register</span></h3>
+        <div class="mb-3">
+            <label for="UserName" class="form-label">User Name</label>
+            <div>
+                <input type="text" class="form-control" name="UserName">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <div>
+                <input type="password" class="form-control" name="Password">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="City" class="form-label">Your City</label>
+            <div>
+                <select name="City" class="form-select">
+                    <option>Delhi</option>
+                    <option>Hyd</option>
+                </select>
+            </div>
+        </div>  
+        <div class="mb-3">
+            <label for="Age" class="form-label">Age</label>
+            <div>
+                <input type="range" class="form-range" name="Age">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Subscribe" class="form-label">Subscribe</label>
+            <div class="form-switch">
+                <input class="form-check-input" name="Subscribe" type="checkbox"> <label class="form-check-label">Yes</label>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary w-100">Login</button>
+        </div>
+    </form>
+</body>
+</html>
+
+Bootstrap Input Group Classes
+
+.input-group
+.input-group-sm
+.input-group-lg
+.input-group-text
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid">
+    <h2>Amazon Search</h2>
+    <div class="input-group">
+        <select class="input-group-text">
+            <option>All</option>
+            <option>Mobiles</option>
+            <option>Watches</option>
+        </select>
+        <input type="text" class="form-control">
+        <button class="btn btn-warning">
+            <span class="bi bi-search"></span>
+        </button>
+    </div>
+    <h2>Netflix Regiser</h2>
+    <div class="input-group input-group-lg">
+        <input class="form-control" type="email" placeholder="Your email address">
+        <button class="btn btn-danger ms-2">
+           Get Started <span class="bi bi-chevron-right"></span>
+        </button>
+    </div>
+    <h2>Email</h2>
+    <div class="input-group">
+        <input type="email" class="form-control"> <span class="input-group-text">gmail.com</span>
+    </div>
+    <h2>Password</h2>
+    <div class="input-group">
+        <span class="bi bi-key-fill input-group-text"></span>
+        <input type="password" class="form-control">
+        <span class="bi bi-check-circle input-group-text"></span>
+    </div>
+</body>
+</html>
+
+Form Validation CSS Classes
+
+:required                It sets effects when element is defined with required attribute.
+
+:optional                It sets effects when element is not defined with required.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:optional+span {
+            display: none;
+        }
+        input:required+span {
+            display: inline;
+            color:red;
+        }
+        input:required {
+            border:1px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        input:optional {
+            border:1px solid goldenrod;
+            box-shadow: 2px 2px 2px goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" ><span>*</span></dd>
+        <dt>Age</dt>
+        <dd><input type="number"><span>*</span></dd>
+        <dt>Password</dt>
+        <dd><input type="password" required><span>*</span></dd>
+    </dl>
+</body>
+</html>
+
+ :in-range                : It sets effects to element if numeric value is with in specified range
+ 
+ :out-of-range        : It sets effects to element if value is not with in the specified range.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Age:in-range+div {
+            display: none;
+        }
+        .Age:out-of-range+div {
+            display: block;
+            color:red;
+        }
+        .Age:in-range {
+            border:1px solid green;
+            box-shadow: 2px 2px 2px green;
+        }
+        .Age:out-of-range {
+            border:1px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Age</dt>
+        <dd>
+            <input type="number" class="Age" min="15" max="30">
+            <div>Age 15 to 30 only</div>
+        </dd>
+    </dl>
+</body>
+</html>
+
+ :valid                It sets effects to element if all validations passed.
+
+ :invalid            It sets effects if any specific validation failed.
+
+Note: Validations include => required, minlength, pattern, min, max etc..
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Password:valid+div {
+            display: none;
+        }
+        .Password:invalid+div {
+            display: block;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Password</dt>
+        <dd>
+            <input type="password" class="Password" pattern="(?=.*[A-Z])\w{4,10}">
+            <div>Password 4 to 10 chars with atleast one Uppercase letter.</div>
+        </dd>
+    </dl>
+</body>
+</html>
+
+ :checked             It verifies the checked property for radio and checkbox, if they are
+                     checked then will set a some effects and unchecked then removes
+                     the effects.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .terms:checked+span{
+            color:green;
+        }
+        .terms+span {
+            color:red;
+        }
+        .terms:checked~button {
+            display: block;
+        }
+        .terms~button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+     <fieldset>
+         <legend>Terms of Service</legend>
+         <textarea disabled rows="3" cols="30">please read our terms of service</textarea>
+         <div>
+            <input type="checkbox" class="terms"> <span>I Accept</span>
+            <br><br>
+            <button>Submit</button>
+         </div>
+     </fieldset>
+</body>
+</html>
+
+    :disabled            It sets effects to element when it is set with disabled attribute.
+    :read-only            It sets effects for element when it is readonly.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:read-only {
+            cursor: not-allowed;
+        }
+        input {
+            cursor:text;
+        }
+        button:disabled {
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+     <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" class="UserName" readonly  value="John">
+        </dd>
+     </dl>
+     <button disabled>Submit</button>
+</body>
+</html>
+
+   ::placeholder          It defines effects for placeholder in input element.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input::placeholder {
+            color:red;
+            font-style: italic;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+     <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" class="UserName" placeholder="User Name in Block Letters">
+        </dd>
+     </dl>
+     <button disabled>Submit</button>
+</body>
+</html>
+
+       :focus            It defines effects when element gets focus.
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .UserName:focus+div {
+            display: block;
+            color:red;
+        }
+        .UserName+div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+     <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" class="UserName" placeholder="User Name in Block Letters">
+            <div>Name in Block Letters Only</div>
+        </dd>
+     </dl>
+</body>
+</html>
+
+Ex: Verifying Required with Invalid
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .UserName:invalid+div {
+            display: block;
+            color:red;
+        }
+        .UserName:valid+div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+     <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" class="UserName" required>
+            <div>User Name Required</div>
+        </dd>
+     </dl>
+</body>
+</html>
+
+FAQ: What is difference between  "display:none"  & "visibility:hidden" ?
+Ans :  display:none  will hide the specified element and removes the space allocated
+           for element.
+
+        visibility:hidden will hide the element without removing the space allocated.
+
+Syntax:
+        h1 {
+            display:none;
+        }
+        h1 {
+            visibility:hidden;
+        }
+
+Tables in HTML
+- Table comprises rows and columns.
+- HTML elements used for tables are
+
+        1. <table>                    It is a container for rows and columns
+        2. <caption>                It sets caption to make SEO friendly
+        3. <thead>                Header Section
+        4. <tbody>                Body Section
+        5. <tfoot>                    Footer Section
+        6. <colgroup>            Groups the columns for separation.
+        7. <th>                    Heading Cell [Heading Data]
+        8. <tr>                        Table row
+        9. <td>                    Normal Cell [Table data]
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table width="500" border="1">
+        <caption>Products Data</caption>
+        <colgroup span="3"></colgroup>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>In Stock</th>
+                <th>Preview</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Realme</td>
+                <td>19000</td>
+                <td>Available</td>
+                <td>
+                    <img src="images/realme.jpg" width="50" height="50">
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&copy;</td>
+                <td>Copyright</td>
+                <td>2023</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+Table Attributes:
+1. border, frame, rules
+    
+            frame            : It sets a frame for entire table.
+                              It's values : box, rhs, lhs, above, below, void
+
+                              <table  frame="box | rhs | void ..">
+
+            rules            : It sets rules for rows, columns and groups.
+                              It's values : rows, cols, groups, all, none
+
+                               <table   frame="box"  rules="all | rows | cols | groups ...">
+
+            border            : It sets border for cells.
+                              It's values : 0, 1        [0=false, 1=true]
+
+Note: You can't use border if "rules" attribute is defined for table.
+         You have to remove rules attribute from table, not disable it must be removed.
+
+                    <table  rules="none">      => Invalid for border
+                    <table>                       => valid for border
+                    <table frame="">               => valid for border
+
+        <table  frame="void"  border="1">
+        <table  frame="box"   border="1">
+
+2. cellspacing and cellpadding
+
+        cellspacing            : It sets space between cells.
+        cellpadding            : It sets space between cellborder and content.
+
+        <table  border="1"  frame="void" cellpadding="5" cellspacing="4">
+
+3.  align and valign
+
+        align                    : It sets cell content left, center, right or justify.
+        valign                    : It sets cell content vertically top, center, bottom.
+
+Note: You can set alignment at various levels
+            <table align="left | center..">
+            <thead>, <tbody>, <tfoot>    group level
+            <tr>    row level 
+            <td>   cell level
+
+        HTML Table will not allow any kind of column manipulation.
+Syntax:
+            <tr  align="center"  valign="top">
+            <td  align="center" valign="center">
+            <tbody align="center" valign="bottom">
+
+4. width and height
+
+            width            : It sets width for <table> or <td>
+            height            : It sets height for <table> or <tr>
+
+            <table  width="400"  height="100">
+            <tr height="100">
+            <th width="300">
+            <td width="400">
+
+5. bgcolor and background
+
+            bgcolor        : It sets background color
+             background    : It sets background image
+
+            <table bgcolor="yellow">
+            <tbody bgcolor="red">
+            <tr bgcolor="red">
+            <td bgcolor="red">
+            <th bgcolor="red">
+            <table background="images/pic.jpg">
+
+6. colspan and rowspan
+
+        colspan            : It can merge multiple columns into single cell.
+        rowspan            : It can merge multiple rows into single cell.
+
+        You can define these attributes only for <th> or <td>.
+
+Syntax:
+                <th  colspan="5">
+                <td  rowspan="6">
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <table width="600" rules="all" frame="box">
+        <thead>
+            <tr>
+                <th colspan="5" bgcolor="yellow">Students Data</th>
+            </tr>
+            <tr>
+                <th colspan="2">Name</th>
+                <th colspan="3">Address</th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Postal Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="6" align="center" valign="center">
+                    D <br>
+                    E <br>
+                    L <br>
+                    H <br>
+                    I
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+               
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+               
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+               
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" align="center">&copy; copyright 2023</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+Table Attributes
+- frame
+- rules
+- border
+- cellspacing
+- cellpadding
+- width
+- height
+- align
+- valign
+- bgcolor
+- background
+- colspan
+- rowspan
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+   <table width="100%" frame="void" border="1" cellspacing="10" cellpadding="5">
+      <tr height="300">
+        <td>
+            <table cellspacing="10">
+                <tr>
+                    <td colspan="2"><h3>Up to 60% off | Styles for men</h32></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/a1.jpg" width="100" height="100">
+                        <p>AC</p>
+                    </td>
+                    <td>
+                        <img src="images/a2.jpg" width="100" height="100">
+                        <p>Refig..</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/a3.jpg" width="100" height="100">
+                    </td>
+                    <td>
+                        <img src="images/a4.jpg" width="100" height="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="#">more..</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table cellspacing="10">
+                <tr>
+                    <td colspan="2"><h3>Up to 60% off | Styles for men</h32></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/a1.jpg" width="100" height="100">
+                    </td>
+                    <td>
+                        <img src="images/a2.jpg" width="100" height="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/a3.jpg" width="100" height="100">
+                    </td>
+                    <td>
+                        <img src="images/a4.jpg" width="100" height="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="#">more..</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table cellspacing="10">
+                <tr>
+                    <td colspan="2"><h3>Up to 60% off | Styles for men</h32></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/a1.jpg" width="100" height="100">
+                    </td>
+                    <td>
+                        <img src="images/a2.jpg" width="100" height="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/a3.jpg" width="100" height="100">
+                    </td>
+                    <td>
+                        <img src="images/a4.jpg" width="100" height="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="#">more..</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table cellspacing="10">
+                <tr>
+                    <td colspan="2"><h3>Up to 60% off | Styles for men</h32></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/a1.jpg" width="100" height="100">
+                    </td>
+                    <td>
+                        <img src="images/a2.jpg" width="100" height="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/a3.jpg" width="100" height="100">
+                    </td>
+                    <td>
+                        <img src="images/a4.jpg" width="100" height="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="#">more..</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+Multimedia in HTML
+
+- Multimedia refers to audio and video content.
+- HTML provides separate elements for embedded audio and video in page.
+
+            <video>
+            <audio>
+            <embed> [Obsolete]
+
+- HTML supports videos of type:  mp4, avi, ogg, mkv, mov etc..
+
+Syntax:
+            <video  src="video_path"  controls  poster="thumbnail.jpg">
+            </video>
+
+- HTML supports audio of type:  mp3, wav, midi etc..
+
+Syntax:
+            <audio  src="audio_path"  controls  poster="thumbnail.jpg">
+            </audio>
+
+Ex:
+<body>
+    <video src="./docs/class.mkv" poster="./images/ui.jpg" width="300" height="300" controls></video>
+</body>
+
+                                        Marquee
+- It is used to create sliding and scrolling content in page.
+
+Syntax:
+        <marquee>
+            .... your text | images ....
+        </marquee>
+
+Attributes:
+1. scrollamount                : It sets scrolling speed from 1 to 100.
+2. direction                    : It sets scrolling direction: left, right, up, down
+3. behavior                    : It changes from scrolling to sliding alternate.
+4. loop                        : It specifies the number of times to display.
+5. width and height            : It sets width and height for marquee area.
+6. bgcolor                        : It sets background color for marquee area.
+
+Methods: [controlled using javascript]
+
+start()                            : It starts animation.
+stop()                            : It stops animation
+
+Syntax:
+    <marquee  scrollamount="15"  direction="right">
+    <marquee  scrollamount="15"  behavior="alternate">
+    <marquee  scrollamount="15"  loop="3">
+    <marquee  width="300" height="100" bgcolor="yellow">
+
+Ex:
+<body>
+    <marquee scrollamount="15" width="300" bgcolor="yellow">
+        Offer  50% OFF  <img src="images/realme.jpg" width="50" height="50"> on mobiles
+    </marquee>
+</body>
+
+
+Summary :
+---------
+1. Browser Architecture
+2. What is DOM
+3. HTML parsing 
+5. HTML Evolution 
+6. HTML Page Structure
+7. Body Semantics
+8. Basic Entities and Elements
+9. Text Formatting
+10. Headings, Paragraphs, Blockquote
+11. Various Lists & Containers
+        data list, ordered, unordered, fieldset, details
+12. Images in HTML
+13. Links for Navigation
+14. Forms in HTML
+15. Tables in HTML
+16. Multimedia
